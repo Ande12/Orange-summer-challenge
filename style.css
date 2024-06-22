@@ -1,0 +1,144 @@
+/* global styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+/* header style */
+header {
+    background-color: #008080;
+    color: white;
+    padding: 15px 0;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+/* main body style */
+main {
+    margin: 20px;
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* form style */
+form {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+form input,
+form button {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input:focus,
+form button:focus {
+    outline: none;
+    border-color: #008080;
+    box-shadow: #008080;
+}
+
+form button {
+    background-color: #008080;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    opacity: 0.7;
+}
+/* table styles */
+#task-list {
+    width: 100%;
+    max-height: 400px; /* Set a max height for the table container */
+    overflow-y: auto; /* Enable vertical scrolling */
+    border: 1px solid #ccc; /* Add a border to the table container */
+    border-radius: 5px; /* Add rounded corners to the table container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+    background-color: white; /* Set the background color to white */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    position: sticky; /* Make the table header sticky */
+    top: 0; /* Stick the header to the top */
+    background-color: #008080; /* Set the header background color */
+    color: white; /* Set the header text color */
+    z-index: 1; /* Ensure the header is above the table body */
+}
+
+th, td {
+    padding: 15px; /* Increase padding for better spacing */
+    border-bottom: 1px solid #ccc; /* Add a border to table cells */
+    text-align: left;
+}
+
+th {
+    text-transform: uppercase; /* Make header text uppercase */
+    letter-spacing: 1px; /* Add letter spacing for a cleaner look */
+}
+
+td {
+    background-color: #f9f9f9; /* Add a light background color to table cells */
+}
+
+tr:hover td {
+    background-color: #f1f1f1; /* Highlight the row on hover */
+}
+
+/* Responsive design for smaller screen sizes */
+@media (max-width: 600px) {
+    form {
+        flex-direction: column;
+    }
+
+    form input,
+    form button {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    th {
+        display: none;
+    }
+
+    td {
+        position: relative;
+        padding-left: 50%;
+        text-align: right;
+    }
+
+    td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        width: calc(50% - 20px);
+        text-align: left;
+        font-weight: bold;
+    }
+}

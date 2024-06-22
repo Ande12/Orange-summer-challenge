@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- start head -->
+    <header>
+        <h1>Task Management</h1>
+    </header>
+    <!-- end head -->
+     <!-- start main body -->
+    <main>
+        <!-- task form -->
+        <form id="task-form" method="post">
+            <input type="text" id="task-name" placeholder="Task Name" required>
+            <!-- Initial code for code for part 1: HTML and CSS -->
+            <input type="text" id="task-desc" placeholder="Task Description" required>
+            <input type="date" id="task-deadline" required>
+            <button type="submit">Add Task</button>
+        </form>
+        <!-- task table- where all added task will be displayed-->
+        <div id="task-list">
+            <table>
+                <thead>
+                    <tr>
+                        <!-- Initial code for code for part 1: HTML and CSS -->
+                        <!-- <th>Task Number</th>
+                        <th>Task Name</th>
+                        <th>Task Description</th>
+                        <th>Task Deadline</th>
+                        <th>Edit</th>
+                        <th>Delete</th> -->
+
+                        <!-- updated sructure with the use of API -->
+                        <th>Number</th>
+                        <th>Task Name</th>
+                        <th>Status</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Task rows will be added here dynamically when triggered by javascript code -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
