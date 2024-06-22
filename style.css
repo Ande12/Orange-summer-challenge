@@ -67,12 +67,12 @@ form button:hover {
 /* table styles */
 #task-list {
     width: 100%;
-    max-height: 400px; /* Set a max height for the table container */
+    max-height: 400px; 
     overflow-y: auto; /* Enable vertical scrolling */
-    border: 1px solid #ccc; /* Add a border to the table container */
-    border-radius: 5px; /* Add rounded corners to the table container */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
-    background-color: white; /* Set the background color to white */
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    background-color: white; 
 }
 
 table {
@@ -81,30 +81,30 @@ table {
 }
 
 thead {
-    position: sticky; /* Make the table header sticky */
-    top: 0; /* Stick the header to the top */
-    background-color: #008080; /* Set the header background color */
-    color: white; /* Set the header text color */
-    z-index: 1; /* Ensure the header is above the table body */
+    position: sticky; 
+    top: 0; 
+    background-color: #008080; 
+    z-index: 1; 
 }
 
 th, td {
-    padding: 15px; /* Increase padding for better spacing */
-    border-bottom: 1px solid #ccc; /* Add a border to table cells */
+    padding: 15px; 
+    border-bottom: 1px solid #ccc; 
     text-align: left;
 }
 
 th {
-    text-transform: uppercase; /* Make header text uppercase */
-    letter-spacing: 1px; /* Add letter spacing for a cleaner look */
+    color: #fff;
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
 }
 
 td {
-    background-color: #f9f9f9; /* Add a light background color to table cells */
+    background-color: #f9f9f9;
 }
 
 tr:hover td {
-    background-color: #f1f1f1; /* Highlight the row on hover */
+    background-color: #f1f1f1; 
 }
 
 /* Responsive design for smaller screen sizes */
